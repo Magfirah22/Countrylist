@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerVertical="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_flag"
+        tools:src="#ff8ba7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        tools:civ_border_width="1dp"
+        tools:civ_border_color="#b0e0e6"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        tools:scr="@android:color/colorPrimaryDark"
+        tools:ignore="ContentDescription"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/img_flag"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            tools:text="@string/country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0d86d0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_country_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="@string/country_detail"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

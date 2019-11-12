@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:background="#961e00"
+    tools:titleTextColor="#b0e0e6"
+    tools:subtitleTextColor="b0e0e6"
+    tools:subtitle="https://github.com/Magfirah22"
+    tools:logo="@android:drawable/ic_search_category_default"
+    tools:title="Magfirah List"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
